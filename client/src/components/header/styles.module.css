@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
+html, body {
+    margin: 0;
+   }
+
+.outer{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 20px; */
+    /* margin: 0 auto;  */
+    /* max-width: 1200px; */
+    padding:  8px;
+    align-items: center; 
+    /* background-color: #581845; */
+    /* position: fixed; */
+    height: 50px;
+    
+}
+
+.navlinks{
+    display: flex;
+    gap: 5px;
+}
+
+.search{
+    width: 25%;
+    border: none;
+    border-radius: 50px;
+    height: 16px;
+    padding: 15px;
+    background: #F2F0F1;
+    outline: none;
+    
+}
+
+.link{
+    color: black;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.belownav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    /* background-color: black; */
+    border-radius: 10px;
+    /* margin-top: 8px; */
+    
+    
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+}
+
+.searchbar {
+    width: 400px; 
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #F2F0F1;
+    /* transition: border-width 0.3s; */
+  }
+
+  .searchbar:focus {
+    border-width: 1px; 
+  }
+
+  .searchbarmobile{
+    display: none;
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .searchbar {
+      display: none;
+  }
+
+  .searchbarmobile{
+    display: flex;
+    justify-content: center;
+  }
+
+  .searchbardesign{
+    background-color: #F2F0F1;
+    height: 20px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+  }
+
+  .belownav{
+    display: none;
+  }
+
+  .navlinks{
+    display: none;
+  }
+
+}
+
+.logoFont{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    
+}
+
+.cartect{
+    text-align: end;
+}
+
+.sticky{
+  background-color: aliceblue;
+ 
+}
+
+.yellowBackground {
+  background-color: yellow;
+}
+
+header{
+  z-index: 1;
+}
+
+.opaque {
+  background-color: rgba(31,40, 55, 1); 
+  opacity: 1; 
+}

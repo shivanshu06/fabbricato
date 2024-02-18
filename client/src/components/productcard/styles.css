@@ -1,0 +1,14 @@
+.cardContainer {
+   
+  
+    /* Add the following to remove hover effects on the button */
+    .addToCardButton:hover {
+      background-color: yellow; /* You may need to adjust the color to match your primary color */
+      border-color: #1890ff;
+    }
+  }
+
+  .ant-card-body .ant-card-meta-title a {
+    text-decoration: none;
+}
+  

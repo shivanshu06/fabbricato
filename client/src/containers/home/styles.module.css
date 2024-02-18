@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.align {
+  display: flex;
+
+  
+  background-repeat: no-repeat;
+  background-color: #ed2939;
+  padding: 20px;
+  
+  margin-top: 25px;
+}
+
+.card {
+ 
+  margin: 10px;
+  border-radius: 0;
+}
+
+
+h1,
+h2,
+h3,
+p,
+h4,
+h5 {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+}
+
+.headtag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+}
+
+.shopnow {
+  /* color: white; */
+  background-color: black;
+
+  color: white;
+  /* padding: 20px; */
+}
+
+.blueback {
+  /* background-image: url('../../assets/images/homepage/light.jpg'); */
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  /* color: white; */
+}
+
+.collec {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.collecbtn {
+  border-radius: 0px;
+  font-weight: 600;
+  /* background-color: #01BEFF; */
+  border-radius: 50px;
+  height: 160px;
+  width: 150px;
+  background-image: url("../../assets/images/header/uuu.svg");
+}
+
+.text {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,52,105,1) 0%, rgba(0,198,255,1) 100%); */
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+}
+
+.poster{
+  height: 80vh;
+  /* width: 50vw !important; */
+} 
+
+.colleccards {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #ffdf00; */
+  background-image: url("../../assets/images/homepage/kids.jpg");
+}
+
+
+.bannerTwo {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.left {
+  /* flex: 0 0 50%;  */
+  background-color: black;
+  color: white; 
+  padding: 60px;
+  width: 60%;
+}
+
+.right {
+  /* flex: 0 0 50%; */
+  background-color: black;
+  color: white;
+  width: 40%;
+  padding: 60px;
+}
+
+.buynowBUtton{
+  background-color: white;
+  padding: 10px 16px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .bannerTwo {
+    flex-direction: column; 
+    width: 70%;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+}
+
+.imagegallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagecontainer {
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.clickImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  height: 500px;
+}
+
+.imagecontainer:hover .clickImage {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textoverlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  padding: 8px;
+  border-top-left-radius: 8px;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: 300;
+}

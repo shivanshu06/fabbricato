@@ -1,0 +1,20 @@
+.addToCardButton{
+    background-color: black;
+    width: 100%;
+    
+  }
+
+  .cardImage{
+    height: 250px;
+  }
+
+  .nameOfProduct{
+    font-size: 18px;
+    text-decoration: none;
+    
+  }
+
+  .linkWithoutUnderline {
+    text-decoration: none;
+    color: inherit; 
+  }

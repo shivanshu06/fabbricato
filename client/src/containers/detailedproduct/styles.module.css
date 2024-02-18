@@ -1,0 +1,69 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+.price {
+  color: #818181;
+  font-size: 24px;
+
+  font-weight: 400;
+  text-decoration: line-through;
+  word-wrap: break-word;
+}
+
+.afterPrice {
+  color: #024e82;
+  font-size: 24px;
+
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.productname {
+  font-size: 36px;
+
+  font-weight: 700;
+  line-height: 48px;
+  word-wrap: break-word;
+}
+
+.smallImages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.detailsOfPro {
+  padding: 40px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.addToCartBtn {
+  background-color: black;
+  border-radius: 0;
+}
+
+.bigImage{
+  width: 400px;
+  height: 450px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContainer{
+    flex-direction: column;
+  }
+  .bigImage{
+    width: 100%;
+  }
+}
