@@ -12,6 +12,7 @@ const addressRoute = require("./api/routes/addresses");
 const dashproducts = require("./api/routes/dashproducts");
 const superadmin=require('./api/routes/superadmin')
 const bodyParsher = require("body-parser");
+const path = require("path");
 
 mongoose.connect(
   "mongodb+srv://shivanshugaur6:qwertyuiop123@luxtee.laqr8tu.mongodb.net/?retryWrites=true&w=majority"
@@ -34,6 +35,15 @@ app.use(
     credentials: true,
   })
 );
+
+const _dirname = path.dirname(__filename);
+
+const clientBuildPath = path.join(_dirname, "../client/build");
+app.use("/client", express.static(clientBuildPath));
+
+
+const adminBuildPath = path.join(_dirname, "../Admin/build");
+app.use("/admin", express.static(adminBuildPath));
 
 app.use(bodyParsher.urlencoded({ extended: false }));
 app.use(bodyParsher.json());
