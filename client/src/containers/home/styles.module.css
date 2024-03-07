@@ -34,6 +34,8 @@ h5 {
   margin: 0;
 }
 
+
+
 .headtag {
   display: flex;
   flex-direction: column;
@@ -77,6 +79,8 @@ h5 {
 .text {
   text-align: center;
   margin-top: 90px;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .banner {
@@ -94,7 +98,7 @@ h5 {
 }
 
 .poster{
-  height: 80vh;
+  /* height: 80vh; */
   /* width: 50vw !important; */
 } 
 
@@ -113,6 +117,7 @@ h5 {
   display: flex;
   width: 100%;
   gap: 10px;
+  
 }
 
 .left {
@@ -135,12 +140,14 @@ h5 {
   background-color: white;
   padding: 10px 16px;
   border: none;
+  color: black;
 }
 
 @media (max-width: 768px) {
   .bannerTwo {
     flex-direction: column; 
-    width: 70%;
+    width: 100%;
+    justify-content: center;
   }
 
   .left, .right {

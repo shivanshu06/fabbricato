@@ -98,7 +98,7 @@ function Header() {
     >
       <div className={styles.outer}>
         <div style={{display:'flex'}}>
-          <img style={{height:'70px',width:'40px'}} src={Logo} alt="Logo" className={styles.logo} />
+          {/* <img style={{height:'70px',width:'40px'}} src={Logo} alt="Logo" className={styles.logo} /> */}
           <p className={styles.logoFont}>fabbricato</p>
         </div>
 

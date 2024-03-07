@@ -1,6 +1,7 @@
 import axios from "axios"
 
-const BASE_URL="http://localhost:5000"
+// const BASE_URL="http://localhost:5000"
+const BASE_URL="https://api.fabbricato.in"
 
 
 export const getfullcollection=async(category)=>{

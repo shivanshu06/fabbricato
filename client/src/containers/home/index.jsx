@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import '../../global.css'
 import axios from "axios";
 import marvel from "../../assets/images/homepage/marvel2.jpg";
 import Carousel from "react-multi-carousel";
@@ -14,9 +14,9 @@ import woman from "../../assets/images/homepage/women.png";
 import { getAllProducts } from "../../requests";
 import ProductCard from "../../components/productcard";
 import kids from "../../assets/images/homepage/kids.jpg";
-import img1 from '../../assets/images/homepage/img1.jpg'
-import img2 from '../../assets/images/homepage/img2.jpg'
-import img3 from '../../assets/images/homepage/img3.jpg'
+import img1 from "../../assets/images/homepage/img1.jpg";
+import img2 from "../../assets/images/homepage/img2.jpg";
+import img3 from "../../assets/images/homepage/img3.jpg";
 import styles from "./styles.module.css";
 import { Button, Card } from "antd";
 import { Link } from "react-router-dom";
@@ -50,8 +50,6 @@ const Homepage = () => {
     },
   };
 
-  
-
   const content = [
     { image: marvel, title: "Marvel" },
     { image: marvel, title: "Marvel" },
@@ -60,24 +58,23 @@ const Homepage = () => {
     // Add more content as needed
   ];
 
-  
-    const images = [
-      {
-        src: img1,
-        alt: 'T-shirt 1',
-        text: 'T-SHIRTS',
-      },
-      {
-        src: img2,
-        alt: 'T-shirt 2',
-        text: 'JOGGERS',
-      },
-      {
-        src: img3,
-        alt: 'T-shirt 3',
-        text: 'HOODIES',
-      },
-    ]
+  const images = [
+    {
+      src: img1,
+      alt: "T-shirt 1",
+      text: "T-SHIRTS",
+    },
+    {
+      src: img2,
+      alt: "T-shirt 2",
+      text: "JOGGERS",
+    },
+    {
+      src: img3,
+      alt: "T-shirt 3",
+      text: "HOODIES",
+    },
+  ];
 
   // console.log(items)
   const handleCardClick = (category) => {
@@ -116,7 +113,7 @@ const Homepage = () => {
           <img src={spiderman} alt="spidermancollection" />
         </div>
       </AntdCarousel>
-<br></br>
+      <br></br>
       <div className={styles.container}>
         <div className={styles.blueback}>
           <h3>Collection For your loved ones!!</h3>
@@ -175,16 +172,19 @@ const Homepage = () => {
           </div>
         </div>
         <div className={styles.text}>
-        <div className={styles.imagegallery}>
-      {images.map((image, index) => (
-        <div className={styles.imagecontainer} key={index}>
-          <img src={image.src} alt={image.alt} className={styles.clickImage}/>
-          <h1 className={styles.textoverlay}>{image.text}</h1>
+          <div className={styles.imagegallery}>
+            {images.map((image, index) => (
+              <div className={styles.imagecontainer} key={index}>
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className={styles.clickImage}
+                />
+                <h1 className={styles.textoverlay}>{image.text}</h1>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-    </div>
-
 
         <div className={styles.text}>
           <h1>NEW ARRIVALS</h1>
@@ -201,17 +201,22 @@ const Homepage = () => {
         <div className={styles.text}>
           <div className={styles.bannerTwo}>
             <div className={styles.left}>
-             
               <h1>PEACE OF MIND</h1>
               <br></br>
-              <p >A one-stop platform for all your fashion needs, hassle-free. Buy with a peace of mind.</p>
+              <p>
+                A one-stop platform for all your fashion needs, hassle-free. Buy
+                with a peace of mind.
+              </p>
               <br></br>
               <button className={styles.buynowBUtton}>BUY NOW</button>
             </div>
             <div className={styles.right}>
-            <h1>Buy 2 Get 1 Free</h1>
-            <br></br>
-              <p>End of season sale. Buy any 2 items of your choice and get 1 free.</p>
+              <h1>Buy 2 Get 1 Free</h1>
+              <br></br>
+              <p>
+                End of season sale. Buy any 2 items of your choice and get 1
+                free.
+              </p>
               <br></br>
               <button className={styles.buynowBUtton}>BUY NOW</button>
             </div>

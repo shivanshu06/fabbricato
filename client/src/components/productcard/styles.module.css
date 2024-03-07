@@ -1,11 +1,26 @@
-.addToCardButton{
-    background-color: black;
-    width: 100%;
-    
-  }
+.addToCardButton {
+  background-color: black;
+  width: 100%;
+  transition: transform 0.3s ease; /* Smooth transition effect */
+font-weight: 600;
+  /* Additional styling if needed */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addToCardButton:hover {
+  transform: scale(1.1); 
+  background-color: grey !important;
+}
 
   .cardImage{
     height: 250px;
+    width: 100%;
   }
 
   .nameOfProduct{
@@ -17,4 +32,14 @@
   .linkWithoutUnderline {
     text-decoration: none;
     color: inherit; 
+  }
+
+  .card {
+    margin: 10px;
+    
+   
+  
+    
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
   }

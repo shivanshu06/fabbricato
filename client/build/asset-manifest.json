@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.505f6a72.css",
-    "main.js": "/static/js/main.9f0aa7e0.js",
+    "main.css": "/static/css/main.59c8aaba.css",
+    "main.js": "/static/js/main.e6ee9941.js",
     "static/js/787.a81e630c.chunk.js": "/static/js/787.a81e630c.chunk.js",
     "static/media/men.jpg": "/static/media/men.0de6ff82a5916cd30b58.jpg",
-    "static/media/img2.jpg": "/static/media/img2.22e18425dac4859e9a71.jpg",
-    "static/media/img1.jpg": "/static/media/img1.fed85998bc59e9654637.jpg",
-    "static/media/img3.jpg": "/static/media/img3.025f68b09997e24f93e0.jpg",
     "static/media/women.jpg": "/static/media/women.de73712ae481c7885c83.jpg",
     "static/media/kids.jpg": "/static/media/kids.96a74db730bbe1028807.jpg",
+    "static/media/img2.jpg": "/static/media/img2.79ee89e3654c493d095b.jpg",
     "static/media/contactus.png": "/static/media/contactus.f48e0e9497a9b3e2133e.png",
+    "static/media/img3.jpg": "/static/media/img3.1d0648e1c9e65fb8b505.jpg",
+    "static/media/img1.jpg": "/static/media/img1.d4e5fe47d21d812a17b3.jpg",
     "static/media/men.png": "/static/media/men.a2ce346e0fa2aba54ef7.png",
     "static/media/latest.jpeg": "/static/media/latest.2112e4157cfdfe2ab5dc.jpeg",
     "static/media/spiderman.jpeg": "/static/media/spiderman.41ecb77f59e21e338baa.jpeg",
@@ -25,12 +25,12 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/login.svg": "/static/media/login.79872296556418253ca4b3289f856112.svg",
     "index.html": "/index.html",
-    "main.505f6a72.css.map": "/static/css/main.505f6a72.css.map",
-    "main.9f0aa7e0.js.map": "/static/js/main.9f0aa7e0.js.map",
+    "main.59c8aaba.css.map": "/static/css/main.59c8aaba.css.map",
+    "main.e6ee9941.js.map": "/static/js/main.e6ee9941.js.map",
     "787.a81e630c.chunk.js.map": "/static/js/787.a81e630c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.505f6a72.css",
-    "static/js/main.9f0aa7e0.js"
+    "static/css/main.59c8aaba.css",
+    "static/js/main.e6ee9941.js"
   ]
 }
