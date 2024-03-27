@@ -3,8 +3,10 @@ import '../../global.css'
 import axios from "axios";
 import marvel from "../../assets/images/homepage/marvel2.jpg";
 import Carousel from "react-multi-carousel";
+import Slider from "react-slick";
 import "react-multi-carousel/lib/styles.css";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import style from "../../style.module.css";
 import spiderman from "../../assets/images/homepage/spiderman.jpeg";
 import off from "../../assets/images/homepage/latest.jpeg";
@@ -50,6 +52,18 @@ const Homepage = () => {
     },
   };
 
+  const imagesArray = [spiderman, off];
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade:true,
+    autoplay: true,
+    autoplaySpeed: 2000
+  };
   const content = [
     { image: marvel, title: "Marvel" },
     { image: marvel, title: "Marvel" },
@@ -75,6 +89,8 @@ const Homepage = () => {
       text: "HOODIES",
     },
   ];
+
+  
 
   // console.log(items)
   const handleCardClick = (category) => {
@@ -105,14 +121,23 @@ const Homepage = () => {
 
   return (
     <div>
-      <AntdCarousel autoplay>
+      {/* <AntdCarousel autoplay>
         <div className={styles.poster}>
           <img src={off} alt="off" />
         </div>
         <div className={styles.poster}>
           <img src={spiderman} alt="spidermancollection" />
         </div>
-      </AntdCarousel>
+      </AntdCarousel> */}
+      <div className={styles.sliderContainer}>
+      <Slider {...settings}>
+        {imagesArray.map((image, index) => (
+          <div key={index}>
+            <img src={image} alt={`Slide ${index + 1}`} className={styles.slideImage} />
+          </div>
+        ))}
+      </Slider>
+    </div>
       <br></br>
       <div className={styles.container}>
         <div className={styles.blueback}>

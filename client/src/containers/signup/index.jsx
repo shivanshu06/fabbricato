@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Form, Input, Button, notification } from "antd";
 import shop from "../../assets/images/contactus/shop.svg";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from '../../assets/images/header/logonew.png'
+import Logo from '../../assets/images/header/logo.png'
 
 const Signup = () => {
   const [form] = Form.useForm();

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.59c8aaba.css",
-    "main.js": "/static/js/main.e6ee9941.js",
+    "main.css": "/static/css/main.86c4e8bb.css",
+    "main.js": "/static/js/main.93e69b45.js",
     "static/js/787.a81e630c.chunk.js": "/static/js/787.a81e630c.chunk.js",
     "static/media/men.jpg": "/static/media/men.0de6ff82a5916cd30b58.jpg",
     "static/media/women.jpg": "/static/media/women.de73712ae481c7885c83.jpg",
@@ -14,23 +14,27 @@
     "static/media/latest.jpeg": "/static/media/latest.2112e4157cfdfe2ab5dc.jpeg",
     "static/media/spiderman.jpeg": "/static/media/spiderman.41ecb77f59e21e338baa.jpeg",
     "static/media/women.png": "/static/media/women.48796b362e7301334efb.png",
-    "static/media/logonew.png": "/static/media/logonew.47b8b13441b3e6cf20d9.png",
+    "static/media/logo.png": "/static/media/logo.c0d089d72040bff1240a.png",
     "static/media/shop.svg": "/static/media/shop.8e702baf346208a2da24c978b5d43c4e.svg",
     "static/media/marvel2.jpg": "/static/media/marvel2.7c1a17600b3bb345bfde.jpg",
     "static/media/404.svg": "/static/media/404.bdf1c60c297dc6528f56fe6a382dacdf.svg",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/emptycart.svg": "/static/media/emptycart.b5055e56282bba2de480b7282277f3f9.svg",
-    "static/media/uuu.svg": "/static/media/uuu.3e3a8b6ddf6c5f09250026fdc87e8a52.svg",
+    "static/media/uuu.svg": "/static/media/uuu.3e3a8b6ddf6c5f092500.svg",
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/login.svg": "/static/media/login.79872296556418253ca4b3289f856112.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.59c8aaba.css.map": "/static/css/main.59c8aaba.css.map",
-    "main.e6ee9941.js.map": "/static/js/main.e6ee9941.js.map",
+    "main.86c4e8bb.css.map": "/static/css/main.86c4e8bb.css.map",
+    "main.93e69b45.js.map": "/static/js/main.93e69b45.js.map",
     "787.a81e630c.chunk.js.map": "/static/js/787.a81e630c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59c8aaba.css",
-    "static/js/main.e6ee9941.js"
+    "static/css/main.86c4e8bb.css",
+    "static/js/main.93e69b45.js"
   ]
 }

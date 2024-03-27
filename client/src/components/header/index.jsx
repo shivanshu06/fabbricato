@@ -2,13 +2,14 @@ import styles from "./styles.module.css";
 import React from "react";
 import { useEffect, useState,useRef } from "react";
 import { Button, Input, Dropdown, notification } from "antd";
-import Logo from "../../assets/images/header/logonew.png";
+import Logo from "../../assets/images/header/logo.png";
 import {
   ShoppingCartOutlined,
   LoginOutlined,
   HeartOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { Button as Btn } from "@chakra-ui/react";
 import {
   AppstoreOutlined,
   MailOutlined,
@@ -34,7 +35,7 @@ function Header() {
   const user = useSelector((state) => state.cart.user);
   const fname = useSelector((state) => state?.cart?.user?.firstname);
   //  setLoggedIn(user)
-  console.log(user, "*************");
+  // console.log(user, "*************");
 
   function setFixed() {
     if (window.scrollY >= 100) {
@@ -98,8 +99,8 @@ function Header() {
     >
       <div className={styles.outer}>
         <div style={{display:'flex'}}>
-          {/* <img style={{height:'70px',width:'40px'}} src={Logo} alt="Logo" className={styles.logo} /> */}
-          <p className={styles.logoFont}>fabbricato</p>
+          <img style={{height:'35px'}} src={Logo} alt="Logo" className={styles.logo} />
+          {/* <p className={styles.logoFont}>fabbricato</p> */}
         </div>
 
         <div className={styles.belownav}>
@@ -138,12 +139,13 @@ function Header() {
           )}
 
           <Link to="/shoppingcart">
-            <Button
-              className={styles.link}
-              size="large"
-              type="link"
-              icon={<ShoppingCartOutlined />}
-            />
+            <Btn
+              className={styles.cartBtn}
+              // size="large"
+              // type="link"
+              leftIcon={<ShoppingCartOutlined />}
+              
+            >Cart</Btn>
           </Link>
           {user ? (
             <Dropdown overlay={menu} placement="bottomRight">
@@ -156,7 +158,7 @@ function Header() {
             </Dropdown>
           ) : (
             <Link to="/login">
-              <Button type="primary">Log in</Button>
+              <Btn color="white" background="black" width="120px" >Log in</Btn>
             </Link>
           )}
         </div>

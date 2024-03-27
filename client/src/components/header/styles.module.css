@@ -38,7 +38,7 @@ html, body {
 .link{
     color: black;
     font-weight: 300;
-    font-size: medium;
+    font-size: 18px;
 }
 
 .belownav{
@@ -133,3 +133,9 @@ header{
   background-color: rgba(31,40, 55, 1); 
   opacity: 1; 
 }
+
+.cartBtn{
+  background-color: black;
+  color: white;
+}
+

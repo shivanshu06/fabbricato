@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./styles.module.css"
-import logo from "../../assets/images/header/uuu.svg"
+// import logo from "../../assets/images/header/logo.png"
 import { FacebookOutlined, TwitterOutlined, InstagramOutlined } from '@ant-design/icons';
 
 const Footer = () => {

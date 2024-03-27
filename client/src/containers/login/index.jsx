@@ -1,11 +1,12 @@
 import React from "react";
 import { Form, Input, Button, Checkbox, notification } from "antd";
 import LoginImg from "../../assets/images/contactus/login.svg";
-import Logo from '../../assets/images/header/logonew.png'
+import Logo from "../../assets/images/header/logo.png";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { login } from "../../requests";
 import { useDispatch } from "react-redux";
 import { setUser } from "../../reducer";
+import { GoogleOutlined } from "@ant-design/icons";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -34,6 +35,10 @@ const Login = () => {
     }
   };
 
+  const handleGoogleSignIn = () => {
+    // You can handle Google sign-in logic here
+  };
+
   return (
     <div
       style={{
@@ -56,14 +61,25 @@ const Login = () => {
           background: "whitesmoke",
         }}
       >
-        <img style={{width:'150px',height:'100px'}} alt="logo" src={Logo}/>
+        {/* <img
+          style={{ width: "150px", height: "100px" }}
+          alt="logo"
+          src={Logo}
+        /> */}
         <h1>Login</h1>
         <Form
           name="login"
           initialValues={{ remember: true }}
           onFinish={onFinish}
         >
-          <Form.Item
+          <Button
+            type="primary"
+            icon={<GoogleOutlined />}
+            onClick={handleGoogleSignIn}
+          >
+            Sign in with Google
+          </Button>
+          {/* <Form.Item
             name="email"
             rules={[{ required: true, message: "Please input your email!" }]}
           >
@@ -77,9 +93,7 @@ const Login = () => {
             <Input.Password placeholder="Password" />
           </Form.Item>
 
-          {/* <Form.Item name="remember" valuePropName="checked">
-        <Checkbox>Remember me</Checkbox>
-      </Form.Item> */}
+         
 
           <Form.Item>
             <Button type="link">forgot Password?</Button>
@@ -89,9 +103,9 @@ const Login = () => {
             <Button type="primary" htmlType="submit">
               Login
             </Button>
-          </Form.Item>
+          </Form.Item> */}
         </Form>
-        <h5>
+        {/* <h5>
           Don't have an account?
           <Link to="/signup">
             <Button type="link">Create account</Button>
@@ -100,7 +114,7 @@ const Login = () => {
         <h5>
           By creating an account or logging in, you agree with Fabbricato's
           Terms and Conditions and Privacy Policy.
-        </h5>
+        </h5> */}
       </div>
     </div>
   );

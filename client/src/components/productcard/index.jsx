@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Button } from 'antd';
+import { Card, } from 'antd';
+import { Button, ButtonGroup } from '@chakra-ui/react'
 import styles from './styles.module.css'; 
 import './styles.css'
 import { Link } from 'react-router-dom';
@@ -7,6 +8,8 @@ import { Link } from 'react-router-dom';
 const { Meta } = Card;
 
 const ProductCard = ({ product }) => {
+
+  const priceAfterDiscount = product.price - (product.price * product.discount) / 100;
   
 
   return (
@@ -16,7 +19,7 @@ const ProductCard = ({ product }) => {
       <br></br>
       <p className={styles.nameOfProduct}>{product?.name}</p>
       <br></br>
-      <h2>₹ {product?.priceAfterDiscount}</h2>
+      <h2>₹ {priceAfterDiscount}</h2>
       <br></br>
       <div style={{ display: 'flex', gap: '4px', alignItems: 'center', justifyContent: 'space-between' }}>
         <p style={{ textDecoration: 'line-through' }}>M.R.P: {product.price},</p>
@@ -24,7 +27,7 @@ const ProductCard = ({ product }) => {
       </div>
       <br></br>
       <Button
-        type="primary"
+       background="black"
         className={styles.addToCardButton}
       >
         Add to Cart
